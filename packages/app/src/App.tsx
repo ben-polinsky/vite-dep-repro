@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { isTrue } from "isTrue";
+import { isFalsey } from "./isFalse";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
     <>
       <div>
         {isTrue(1) ? <p>1 is true</p> : <p>1 is false</p>}
+        {isFalsey(1) ? <p>1 is falsey</p> : <p>1 is truthy</p>}
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
